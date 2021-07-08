@@ -11,7 +11,7 @@ ESX = nil
 
 TriggerEvent('ESX:getSharedObject', function(obj) ESX = obj end)
 
-ESX.RegisterUsableItem('regist:tenue1', function(result)
+ESX.RegisterUsableItem('tenue1', function(result) -- 'tenue1' correspond au nom et non au label de l'item a qui on atribut le fonction.
     local _src = source
     local xPlayer = ESX.GetPlayerFromId(_src)
     TriggerClientEvent('tenue:1', _src, "Haut 1")
